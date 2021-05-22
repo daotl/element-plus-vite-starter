@@ -3,13 +3,17 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint \"src/**/*.{ts,tsx,vue}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx,vue}\" --fix"
   },
+  "prettier": "@daotl/prettier-config",
   "dependencies": {
     "element-plus": "latest",
-    "vue": "^3.0.5"
+    "vue": "3.0.11"
   },
   "devDependencies": {
+    "@daotl/eslint-config-vue": "^0.0.0-alpha.5",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.11",
     "vite": "^2.3.3"
