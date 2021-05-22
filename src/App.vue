@@ -4,6 +4,7 @@
 </template>
 
 <script setup>
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -17,6 +18,6 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-top: 60px;
 }
 .element-plus-logo {
-  width: 50%
+  width: 50%;
 }
 </style>

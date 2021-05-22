@@ -1,7 +1,9 @@
 <template>
   <h1>{{ msg }}</h1>
 
-  <el-button icon="el-icon-success" type="primary" @click="count++">count is: {{ count }}</el-button>
+  <el-button icon="el-icon-success" type="primary" @click="count++"
+    >count is: {{ count }}</el-button
+  >
 
   <p>
     Edit
@@ -9,18 +11,23 @@
   </p>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: 'Hello, World!',
+    },
   },
   data() {
     return {
-      count: 0
+      count: 0,
     }
-  }
-}
+  },
+})
 </script>
 
 <style scoped>
