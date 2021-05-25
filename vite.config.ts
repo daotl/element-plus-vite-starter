@@ -11,8 +11,11 @@ const config: UserConfig = {
       libs: [
         {
           libraryName: 'element-plus',
+          esModule: true,
+          ensureStyleFile: true,
           resolveStyle: (name) => {
-            return `element-plus/lib/theme-chalk/${name}.css`
+            name = name.slice(3)
+            return `element-plus/packages/theme-chalk/src/${name}.scss`
           },
           resolveComponent: (name) => {
             return `element-plus/lib/${name}`

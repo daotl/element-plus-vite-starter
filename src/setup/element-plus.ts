@@ -2,7 +2,7 @@ import { App } from 'vue'
 import { Plugin } from '@vue/runtime-core'
 
 // If you want to use the .scss style file, you need to import the base.scss file
-// import 'element-plus/packages/theme-chalk/src/base.scss'
+import 'element-plus/packages/theme-chalk/src/base.scss'
 
 // Component list reference: https://github.com/element-plus/element-plus/tree/dev/packages
 import {
