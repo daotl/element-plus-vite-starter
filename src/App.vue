@@ -5,7 +5,7 @@
 
 <script setup>
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <style>

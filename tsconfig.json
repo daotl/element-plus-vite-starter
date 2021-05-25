@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
@@ -9,7 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "/@/*": ["src/*"]
+      "@/*": ["src/*"]
     },
     "strict": true,
     "sourceMap": true,
@@ -22,7 +23,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "vite.config.ts"
+    "vite.config.ts",
   ],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }
