@@ -19,6 +19,7 @@
     "@vue/compiler-sfc": "^3.0.11",
     "typescript": "^4.2.4",
     "vite": "^2.3.3",
+    "vite-plugin-style-import": "^0.10.1",
     "vite-tsconfig-paths": "^3.3.12"
   }
 }
