@@ -31,7 +31,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-a {
+h1 {
   color: #42b983;
 }
 </style>

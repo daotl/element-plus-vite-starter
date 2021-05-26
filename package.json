@@ -4,8 +4,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint \"src/**/*.{ts,tsx,vue}\"",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx,vue}\" --fix"
+    "serve": "vite preview",
+    "lint": "npm run eslint && npm run stylelint",
+    "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
+    "eslint": "eslint \"src/**/*.{ts,tsx,vue}\"",
+    "eslint:fix": "eslint \"src/**/*.{ts,tsx,vue}\" --fix",
+    "stylelint": "stylelint \"src/**/*.{ts,tsx,vue}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{ts,tsx,vue}\" --fix"
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
@@ -18,6 +23,8 @@
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.11",
     "sass": "^1.34.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
     "typescript": "^4.2.4",
     "vite": "^2.3.3",
     "vite-plugin-style-import": "^0.10.1",
