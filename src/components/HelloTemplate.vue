@@ -7,7 +7,7 @@
 
   <p>
     Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    <code>components/HelloTemplate.vue</code> to test hot module replacement.
   </p>
 </template>
 
@@ -15,11 +15,11 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'HelloTemplate',
   props: {
     msg: {
       type: String,
-      default: 'Hello, World!',
+      default: 'Hello, Template!',
     },
   },
   data() {

@@ -1,12 +1,14 @@
 import { UserConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import styleImport from 'vite-plugin-style-import'
 
 const config: UserConfig = {
   plugins: [
     tsconfigPaths(),
     vue(),
+    vueJsx(),
     styleImport({
       libs: [
         {

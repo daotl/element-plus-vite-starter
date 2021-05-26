@@ -21,6 +21,7 @@
     "@daotl/eslint-config-vue": "^0.0.1",
     "@types/node": "^15.6.1",
     "@vitejs/plugin-vue": "^1.2.2",
+    "@vitejs/plugin-vue-jsx": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.11",
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",

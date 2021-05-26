@@ -1,11 +1,14 @@
 <template>
   <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
+  <HelloTemplate msg="Hello Vue 3.0 + Element Plus + Vite + Vue Template" />
+  <HelloJsx msg="Hello Vue 3.0 + Element Plus + Vite + JSX" />
 </template>
 
 <script setup>
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import HelloWorld from '@/components/HelloWorld.vue'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import HelloTemplate from '@/components/HelloTemplate.vue'
+import HelloJsx from '@/components/HelloJsx.vue'
+/* eslint-enable @typescript-eslint/no-unused-vars */
 </script>
 
 <style lang="scss">
