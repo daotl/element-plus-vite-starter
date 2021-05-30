@@ -19,10 +19,8 @@
 
 ## Project setup
 ```shell
-npm install --legacy-peer-deps
+npm install
 ```
-
-> Need legacy `--legacy-peer-deps` for `@fower/vue` now.
 
 ### Compiles and hot-reloads for development
 ```shell
