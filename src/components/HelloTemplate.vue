@@ -14,13 +14,13 @@
 <script setup="props" lang="ts">
 import { defineProps, ref } from 'vue'
 
-// eslint-enable-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const { msg = 'Hello, Template!' } =
   defineProps<{
     msg?: string
   }>()
 
-// eslint-enable-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const count = ref(0)
 </script>
 

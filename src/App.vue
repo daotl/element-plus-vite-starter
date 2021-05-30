@@ -17,10 +17,10 @@ import HelloTemplate from '@/components/HelloTemplate.vue'
 import HelloJsx from '@/components/HelloJsx'
 /* eslint-enable @typescript-eslint/no-unused-vars */
 
-// eslint-enable-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const activeName = ref('template')
 
-// eslint-enable-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const handleClick = (tab, event) => {
   console.log(tab, event)
 }
