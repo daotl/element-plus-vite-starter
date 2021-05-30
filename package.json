@@ -7,10 +7,14 @@
     "serve": "vite preview",
     "lint": "npm run eslint && npm run stylelint",
     "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
-    "eslint": "eslint \"src/**/*.{ts,tsx,vue}\"",
-    "eslint:fix": "eslint \"src/**/*.{ts,tsx,vue}\" --fix",
-    "stylelint": "stylelint \"src/**/*.{ts,tsx,vue}\"",
-    "stylelint:fix": "stylelint \"src/**/*.{ts,tsx,vue}\" --fix"
+    "eslint": "eslint 'src/**/*.{ts,tsx,vue}'",
+    "eslint:fix": "eslint 'src/**/*.{ts,tsx,vue}' --fix",
+    "stylelint": "npm run stylelint:css && npm run stylelint:sass",
+    "stylelint:fix": "npm run stylelint:css:fix && npm run stylelint:sass:fix",
+    "stylelint:css": "stylelint --config .stylelintrc.css.js 'src/**/*.{ts,tsx}'",
+    "stylelint:css:fix": "stylelint --config .stylelintrc.css.js 'src/**/*.{ts,tsx}' --fix",
+    "stylelint:sass": "stylelint --config .stylelintrc.sass.js 'src/**/*.vue'",
+    "stylelint:sass:fix": "stylelint --config .stylelintrc.sass.js 'src/**/*.vue' --fix"
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
@@ -27,7 +31,9 @@
     "@vue/compiler-sfc": "^3.0.11",
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",
+    "stylelint-config-property-sort-order-smacss": "^7.1.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.3.2",
     "vite": "^2.3.4",
     "vite-plugin-style-import": "^0.10.1",
