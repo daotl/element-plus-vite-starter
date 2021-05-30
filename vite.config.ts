@@ -3,6 +3,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import styleImport from 'vite-plugin-style-import'
+import linaria from 'vite-plugin-linaria'
 
 const config: UserConfig = {
   plugins: [
@@ -25,6 +26,7 @@ const config: UserConfig = {
         },
       ],
     }),
+    linaria(),
   ],
   // Aliases already provided by 'vite-tsconfig-paths'
   // resolve: {

@@ -1,5 +1,5 @@
-<script lang="tsx">
 import { defineComponent, ref } from 'vue'
+import { css } from '@linaria/core'
 
 export default defineComponent({
   name: 'HelloJsx',
@@ -20,7 +20,7 @@ export default defineComponent({
   render() {
     return (
       <>
-        <h1>{this.msg}</h1>
+        <h1 class={h1}>{this.msg}</h1>
 
         <el-button
           icon="el-icon-success"
@@ -38,10 +38,7 @@ export default defineComponent({
     )
   },
 })
-</script>
 
-<style scoped lang="scss">
-h1 {
+const h1 = css`
   color: red;
-}
-</style>
+`
