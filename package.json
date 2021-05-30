@@ -18,7 +18,6 @@
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
-    "@fower/vue": "^1.15.0",
     "@linaria/core": "^3.0.0-beta.4",
     "element-plus": "1.0.2-beta.45",
     "vue": "3.0.11"
