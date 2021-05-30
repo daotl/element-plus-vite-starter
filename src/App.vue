@@ -1,23 +1,38 @@
 <template>
   <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-  <HelloTemplate msg="Hello Vue 3.0 + Element Plus + Vite + Vue Template" />
-  <HelloJsx msg="Hello Vue 3.0 + Element Plus + Vite + JSX" />
+  <el-tabs v-model="activeName" @tab-click="handleClick">
+    <el-tab-pane label="Template" name="template">
+      <HelloTemplate msg="Hello Vue 3.0 + Vite + Element Plus + Vue Template" />
+    </el-tab-pane>
+    <el-tab-pane label="JSX" name="jsx">
+      <HelloJsx msg="Hello Vue 3.0 + Vite + Element Plus + JSX" />
+    </el-tab-pane>
+  </el-tabs>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref } from 'vue'
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import HelloTemplate from '@/components/HelloTemplate.vue'
-import HelloJsx from '@/components/HelloJsx.vue'
+import HelloJsx from '@/components/HelloJsx'
 /* eslint-enable @typescript-eslint/no-unused-vars */
+
+// eslint-enable-line @typescript-eslint/no-unused-vars
+const activeName = ref('template')
+
+// eslint-enable-line @typescript-eslint/no-unused-vars
+const handleClick = (tab, event) => {
+  console.log(tab, event)
+}
 </script>
 
 <style lang="scss">
 #app {
+  margin-top: 60px;
   color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 60px;
   text-align: center;
 }
 
