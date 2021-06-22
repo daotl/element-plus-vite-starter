@@ -15,10 +15,9 @@
 import { defineProps, ref } from 'vue'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const { msg = 'Hello, Template!' } =
-  defineProps<{
-    msg?: string
-  }>()
+const { msg = 'Hello, Template!' } = defineProps<{
+  msg?: string
+}>()
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const count = ref(0)
