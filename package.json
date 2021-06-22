@@ -19,24 +19,24 @@
   "prettier": "@daotl/prettier-config",
   "dependencies": {
     "@linaria/core": "^3.0.0-beta.4",
-    "element-plus": "1.0.2-beta.45",
-    "vue": "3.0.11"
+    "element-plus": "^1.0.2-beta.48",
+    "vue": "^3.0.11"
   },
   "devDependencies": {
-    "@daotl/eslint-config-vue": "^0.1.0",
-    "@types/node": "^15.6.1",
-    "@vitejs/plugin-vue": "^1.2.2",
-    "@vitejs/plugin-vue-jsx": "^1.1.4",
-    "@vue/compiler-sfc": "^3.0.11",
-    "sass": "^1.34.0",
+    "@daotl/eslint-config-vue": "^0.1.1",
+    "@types/node": "^15.12.4",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vitejs/plugin-vue-jsx": "^1.1.5",
+    "@vue/compiler-sfc": "3.1.1",
+    "sass": "^1.35.1",
     "stylelint": "^13.13.1",
     "stylelint-config-property-sort-order-smacss": "^7.1.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-config-standard": "^22.0.0",
-    "typescript": "^4.3.2",
-    "vite": "^2.3.4",
+    "typescript": "^4.3.4",
+    "vite": "^2.3.8",
     "vite-plugin-linaria": "^1.0.0",
-    "vite-plugin-style-import": "^0.10.1",
+    "vite-plugin-style-import": "^1.0.0",
     "vite-tsconfig-paths": "^3.3.13"
   }
 }
