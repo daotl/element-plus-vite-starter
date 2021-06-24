@@ -49,6 +49,7 @@ Read the following must-read to understand the technology stack of this template
 - [Vue 3 Composition API](https://v3.vuejs.org/guide/composition-api-introduction.html#reactive-variables-with-ref)
 - [Vue 3 TypeScript Support](https://v3.vuejs.org/guide/typescript-support.html#annotating-props)
 - [Using Vue 3 with JSX and TypeScript](https://bypaulshen.com/posts/vue-3-jsx-typescript)
+- [Vue Style Guide](https://v3.vuejs.org/style-guide/)
 - [Linaria Docs](https://github.com/callstack/linaria#documentation)
 
 ### Recommended
