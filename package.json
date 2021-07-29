@@ -7,14 +7,14 @@
     "serve": "vite preview",
     "lint": "npm run eslint && npm run stylelint",
     "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
-    "eslint": "eslint 'src/**/*.{ts,tsx,vue}'",
-    "eslint:fix": "eslint 'src/**/*.{ts,tsx,vue}' --fix",
+    "eslint": "eslint src/**/*.{ts,tsx,vue}",
+    "eslint:fix": "eslint src/**/*.{ts,tsx,vue} --fix",
     "stylelint": "npm run stylelint:css && npm run stylelint:sass",
     "stylelint:fix": "npm run stylelint:css:fix && npm run stylelint:sass:fix",
-    "stylelint:css": "stylelint --config .stylelintrc.css.js 'src/**/*.{ts,tsx}'",
-    "stylelint:css:fix": "stylelint --config .stylelintrc.css.js 'src/**/*.{ts,tsx}' --fix",
-    "stylelint:sass": "stylelint --config .stylelintrc.sass.js 'src/**/*.vue'",
-    "stylelint:sass:fix": "stylelint --config .stylelintrc.sass.js 'src/**/*.vue' --fix"
+    "stylelint:css": "stylelint --config .stylelintrc.css.js src/**/*.{ts,tsx}",
+    "stylelint:css:fix": "stylelint --config .stylelintrc.css.js src/**/*.{ts,tsx} --fix",
+    "stylelint:sass": "stylelint --config .stylelintrc.sass.js src/**/*.vue",
+    "stylelint:sass:fix": "stylelint --config .stylelintrc.sass.js src/**/*.vue --fix"
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
