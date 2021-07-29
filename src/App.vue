@@ -1,13 +1,10 @@
-<template>
-  <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-  <el-tabs v-model="activeName" @tab-click="handleClick">
-    <el-tab-pane label="Template" name="template">
-      <HelloTemplate msg="Hello Vue 3.0 + Vite + Element Plus + Vue Template" />
-    </el-tab-pane>
-    <el-tab-pane label="JSX" name="jsx">
-      <HelloJsx msg="Hello Vue 3.0 + Vite + Element Plus + JSX" />
-    </el-tab-pane>
-  </el-tabs>
+<template lang="pug">
+img.element-plus-logo(alt="Vue logo" src="./assets/logo.png")
+el-tabs(v-model="activeName" @tab-click="handleClick")
+  el-tab-pane(label="Template" name="template")
+    HelloTemplate(msg="Hello Vue 3.0 + Vite + Element Plus + Vue Template")
+  el-tab-pane(label="JSX" name="jsx")
+    HelloJsx(msg="Hello Vue 3.0 + Vite + Element Plus + JSX")
 </template>
 
 <script setup lang="ts">

@@ -1,14 +1,11 @@
-<template>
-  <h1>{{ msg }}</h1>
+<template lang="pug">
+h1 {{ msg }}
 
-  <el-button icon="el-icon-success" type="primary" @click="count++"
-    >count is: {{ count }}</el-button
-  >
+el-button(icon="el-icon-success" type="primary" @click="count++")
+  | count is: {{ count }}
 
-  <p>
-    Edit <code>components/HelloTemplate.vue</code> to test hot module
-    replacement.
-  </p>
+p.
+  Edit #[code components/HelloTemplate.vue] to test hot module replacement.
 </template>
 
 <script setup="props" lang="ts">
