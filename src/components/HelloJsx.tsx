@@ -25,8 +25,8 @@ export default defineComponent({
         </el-button>
 
         <p>
-          Edit
-          <code>components/HelloJsx.vue</code> to test hot module replacement.
+          Edit <code>components/HelloJsx.vue</code> to test hot module
+          replacement.
         </p>
       </>
     )

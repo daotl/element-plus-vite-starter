@@ -6,8 +6,8 @@
   >
 
   <p>
-    Edit
-    <code>components/HelloTemplate.vue</code> to test hot module replacement.
+    Edit <code>components/HelloTemplate.vue</code> to test hot module
+    replacement.
   </p>
 </template>
 
