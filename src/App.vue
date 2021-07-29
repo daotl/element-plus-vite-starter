@@ -16,13 +16,14 @@ import { ref } from 'vue'
 import HelloTemplate from '@/components/HelloTemplate.vue'
 import HelloJsx from '@/components/HelloJsx'
 /* eslint-enable @typescript-eslint/no-unused-vars */
+import { Pane } from 'element-plus/lib/el-tabs/src/tabs.vue'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const activeName = ref('template')
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const handleClick = (tab, event) => {
-  console.log(tab, event)
+const handleClick = (tab: Pane, tabName: string, ev: Event) => {
+  console.log(tab, tabName, ev)
 }
 </script>
 
