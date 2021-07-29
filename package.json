@@ -11,10 +11,11 @@
     "eslint:fix": "eslint src/**/*.{ts,tsx,vue} --fix",
     "stylelint": "npm run stylelint:css && npm run stylelint:sass",
     "stylelint:fix": "npm run stylelint:css:fix && npm run stylelint:sass:fix",
-    "stylelint:css": "stylelint --config .stylelintrc.css.js src/**/*.{ts,tsx}",
-    "stylelint:css:fix": "stylelint --config .stylelintrc.css.js src/**/*.{ts,tsx} --fix",
-    "stylelint:sass": "stylelint --config .stylelintrc.sass.js src/**/*.vue",
-    "stylelint:sass:fix": "stylelint --config .stylelintrc.sass.js src/**/*.vue --fix"
+    "stylelint:css": "stylelint --config .stylelintrc.css.js src/**/*.{css,ts,tsx}",
+    "stylelint:css:fix": "stylelint --config .stylelintrc.css.js src/**/*.{css,ts,tsx} --fix",
+    "stylelint:sass": "stylelint --config .stylelintrc.sass.js src/**/*.{sass,scss,vue}",
+    "stylelint:sass:fix": "stylelint --config .stylelintrc.sass.js src/**/*.{sass,scss,vue} --fix",
+    "prepare": "husky install"
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
@@ -28,6 +29,8 @@
     "@vitejs/plugin-vue": "^1.3.0",
     "@vitejs/plugin-vue-jsx": "^1.1.7",
     "@vue/compiler-sfc": "3.1.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
     "sass": "^1.36.0",
     "stylelint": "^13.13.1",
     "stylelint-config-property-sort-order-smacss": "^7.1.0",
