@@ -1,5 +1,5 @@
 {
-  "src/**/*.{ts,tsx,vue}": "eslint --fix",
+  "src/**/*.{ts,tsx,vue}": "eslint --cache --fix",
   "src/**/*.{css,ts,tsx}": "stylelint --config .stylelintrc.css.js --fix",
   "src/**/*.{sass,scss,vue}": "stylelint --config .stylelintrc.sass.js --fix"
 }
