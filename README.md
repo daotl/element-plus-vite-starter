@@ -1,6 +1,6 @@
-# element-plus-vite-template
+# element-plus-vite-starter
 
-> A template for Vue with TypeScript, Vite and Element Plus used by DAOT projects
+> A starter template for Vue with TypeScript, Vite and Element Plus used by DAOT projects
 
 ## Technology stack:
 
