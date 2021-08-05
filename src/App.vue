@@ -13,8 +13,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import HelloTemplate from '@/components/HelloTemplate.vue'
-import HelloJsx from '@/components/HelloJsx'
+import HelloTemplate from '~/components/HelloTemplate.vue'
+import HelloJsx from '~/components/HelloJsx'
 /* eslint-enable @typescript-eslint/no-unused-vars */
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

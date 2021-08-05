@@ -1,23 +1,10 @@
 {
+  "extends": "@daotl/tsconfig/vue.json",
   "compilerOptions": {
-    "allowJs": true,
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "~/*": ["src/*"]
     },
-    "types": ["node", "vite/client"],
-    "strict": true,
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src/**/*.ts",

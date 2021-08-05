@@ -30,7 +30,7 @@ const config: UserConfig = {
   ],
   // Aliases already provided by 'vite-tsconfig-paths'
   // resolve: {
-  //   alias: [{ find: '@', replacement: '/src' }],
+  //   alias: [{ find: '~', replacement: '/src' }],
   // },
 }
 
